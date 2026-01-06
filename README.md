@@ -56,8 +56,7 @@ Ideal para **portfólio**, **avaliação técnica** e **apresentação para empr
 ┃ ┣ 📂 bolas <br>
 ┃ ┣ 📂 chuteiras <br>
 ┃ ┗ 📂 camisas <br>
-┣ 📂 html <br>
-┃ ┗ 📄 index.html <br>
+┣  📄 index.html <br>
 ┗ 📄 README.md
 
 
