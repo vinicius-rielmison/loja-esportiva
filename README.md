@@ -98,4 +98,4 @@ Este projeto demonstra:
 - Domínio de HTML e CSS
 - Organização e visão de produto
 
-👉 Projeto ideal para **portfólio no GitHub** e **apresentação para empresas**.
+
