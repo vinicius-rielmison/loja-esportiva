@@ -49,7 +49,7 @@ Ideal para **portfólio**, **avaliação técnica** e **apresentação para empr
 
 ## 🗂️ Estrutura do Projeto
 
-📦 loja-kits-esportivos
+📦 loja-kits-esportivos <br>
 ┣ 📂 css <br>
 ┃ ┗ 📄 style.css <br>
 ┣ 📂 img <br>
