@@ -1,0 +1,218 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #f8fafc, #e5e7eb);
+  color: #111827;
+  overflow-x: hidden;
+}
+
+/* =========================
+   BOAS-VINDAS
+========================= */
+.welcome {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1f2937);
+  animation: welcomeOut 1s ease forwards;
+  animation-delay: 4s;
+}
+
+.welcome h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #38bdf8;
+  }
+  to {
+    letter-spacing: 6px;
+    text-shadow: 0 0 25px #22c55e;
+  }
+}
+
+@keyframes welcomeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+main {
+  padding: 80px 6%;
+  display: grid;
+  gap: 150px;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+.brand-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.brand-title::after {
+  content: "";
+  width: 130px;
+  height: 5px;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  display: block;
+  margin: 18px auto 0;
+  border-radius: 10px;
+}
+
+/* =========================
+   ÁREA DE PRODUTOS
+========================= */
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 50px;
+  animation: groupShow 30s infinite;
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  background: #ffffff;
+  width: 360px;
+  padding: 30px;
+  border-radius: 26px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  animation: fadeUp 1.5s ease;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* =========================
+   BOLAS UMA DO LADO DA OUTRA
+========================= */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   ANIMAÇÃO ZOOM NAS ROUPAS
+========================= */
+@keyframes zoomFocus {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* aplica apenas nos cards dos carrosseis (uniformes) */
+.carousel-track .card {
+  animation: zoomFocus 1.2s ease;
+}
+
+/* =========================
+   ANIMAÇÕES GERAIS
+========================= */
+@keyframes groupShow {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 45px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
