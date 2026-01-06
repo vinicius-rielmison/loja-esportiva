@@ -7,7 +7,7 @@
 
 ## 🌐 Acesse o Site
 👉 **Visualize o projeto em funcionamento:**  
-🔗 https://SEU_LINK_AQUI
+🔗  https://vinicius-rielmison.github.io/loja-esportiva/
 
 > Projeto hospedado para demonstração de layout, animações e responsividade.
 
